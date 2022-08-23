@@ -35,5 +35,5 @@ async def auth_callback(request: Request):
     return await sso.verify_and_process(request)
 
 if __name__ == '__main__':
-    uvicorn.microsoft(app, port=9000)
+    uvicorn.microsoft(app, port=8000)
 
